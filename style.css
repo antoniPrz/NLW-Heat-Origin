@@ -21,7 +21,7 @@ body {
 }
 
 main{
-  background: url(../assets/Mobile.png);
+  background: url(/assets/Mobile.png);
   height: 812px;
   width: 375px;
   color:var(--gray)
@@ -87,4 +87,8 @@ ul{
   display:flex;
   gap:0.5rem;
   justify-content: center;
+}
+
+.twitter{
+
 }
