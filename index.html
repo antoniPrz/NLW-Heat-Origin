@@ -20,15 +20,15 @@
           <img src="../assets/rocketseat_sello.svg" alt="sello rocketseat">
         </span>
 
-        <img src="https://lorempixel.com/185/185/people/.">
+        <img src="https://avatars.githubusercontent.com/u/9523568?v=4">
       </div>
 
-      <h1 id="userName"> Antoni Pérez</h1>
-      <a href="https://www.instagram.com/antonijarrod/">
+      <h1 id="userName"> User Name</h1>
+      <a href="https://github.com/antoniprz" target="_blank">
         <img src="assets/github_icon_small.svg">AntoniPrz
       </a>
 
-      <p class="description"> Frontend Developer , Tecnico en electronica , especialista en microsoladura </p>
+      <p id="githubBio"> </p>
 
       <div class="redes">
 
@@ -62,24 +62,7 @@
 
   </main>
 
-  <script>
-    const linksSocialMedia = {
-      github: 'antoniPrz',
-      youtube: 'watch?v=i9AHJkHqkpw&list=RDMMi9AHJkHqkpw&start_radio=1',
-      facebook: 'maykbrito',
-      instagram: 'jakeliny.gracielly',
-      twitter: 'jakelinytec',
-    }
-
-    function changeSocialmediaLinks() {
-      for (let li of socialLinks.children) {
-        const social = li.getAttribute('class')
-        li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-
-      }
-    }
-
-    changeSocialmediaLinks()
+  <script src="main.js">
 
   </script>
 </body>
