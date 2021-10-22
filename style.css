@@ -21,7 +21,7 @@ body {
 }
 
 main{
-  background: url(images/Mobile.svg);
+  background: url(images/Mobile.png);
   height: 812px;
   width: 375px;
   color:var(--gray)
