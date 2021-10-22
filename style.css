@@ -60,7 +60,9 @@ text-align: center;
 h1 {
   font-size: 1.5rem;
   margin-top:1.5rem;
+
 }
+
 
 a {
   
@@ -72,7 +74,11 @@ a {
   gap:0.50rem;
   justify-content: center;
   align-items: center;
+  
+}
 
+a:hover{
+  color:orange
 }
 
 p{
@@ -89,6 +95,21 @@ ul{
   justify-content: center;
 }
 
-.twitter{
-
+ .facebook:hover{
+  border: 1px solid transparent;
+  filter: brightness(0.8);
 }
+ .twitter:hover{
+  border: 1px solid transparent;
+  filter: brightness(0.8);
+}
+ .instagram:hover{
+  border: 1px solid transparent;
+  filter: brightness(0.8);
+}
+ .youtube:hover{
+  border: 1px solid transparent;
+  filter: brightness(0.8);
+}
+
+
