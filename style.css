@@ -78,7 +78,12 @@ a {
 }
 
 a:hover{
-  color:orange
+  filter: brightness(0.8);
+}
+
+li a:hover{
+ border: 1px solid transparent;
+ filter: brightness(0.8);
 }
 
 p{
@@ -95,21 +100,6 @@ ul{
   justify-content: center;
 }
 
- .facebook:hover{
-  border: 1px solid transparent;
-  filter: brightness(0.8);
-}
- .twitter:hover{
-  border: 1px solid transparent;
-  filter: brightness(0.8);
-}
- .instagram:hover{
-  border: 1px solid transparent;
-  filter: brightness(0.8);
-}
- .youtube:hover{
-  border: 1px solid transparent;
-  filter: brightness(0.8);
-}
+
 
 
