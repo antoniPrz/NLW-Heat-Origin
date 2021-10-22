@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+}
+
+html,
+body {
+
+  --gray: hsl(240,9%,89%);
+  --black: hsl(240,6%,13%);
+
+  height: 100%;
+  font-family: "roboto",sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  /* align-items: center; */
+  place-items: center;
+  ;
+}
+
+main{
+  background: url(../assets/Mobile.png);
+  height: 812px;
+  width: 375px;
+  color:var(--gray)
+}
+  
+.container{
+max-width: 250px;
+/* border: 1px solid ; */
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.avatar{
+  width:10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+  
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;  
+  z-index: 1 ;
+}
+
+.avatar > img {
+ width: 10rem;
+ height: 11.5rem;
+ object-fit: cover;
+
+ clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top:1.5rem;
+}
+
+a {
+  
+  color: orangered;
+  text-decoration: none;
+  margin-top: 0.25rem;
+  
+  display: flex;
+  gap:0.50rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 4rem ;
+
+  display:flex;
+  gap:0.5rem;
+  justify-content: center;
+}

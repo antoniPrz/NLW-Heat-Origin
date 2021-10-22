@@ -4,37 +4,84 @@
 
 <head>
   <title> NLW Heat </title>
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
+  <link rel="stylesheet" href="./style.css">
 
-    body {
-      display: grid;
-      /* align-items: center; */
-      place-items: center;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    h1 {
-      font-size: 3rem
-    }
-
-    a {
-      font-size: 2rem;
-      color: orangered;
-      text-decoration: none;
-    }
-  </style>
-
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" </head>
 
 <body>
-  <!-- Comentario , esto no aparecera ni afectara el dogigo -->
+  <!-- Comentario , esto no aparecera ni afectara el cogigo -->
+  <main>
+    <div class="container">
+      <div class="avatar">
+        <span>
+          <img src="../assets/rocketseat_sello.svg" alt="sello rocketseat">
+        </span>
 
-  <h1> Antoni Pérez</h1>
-  <a href="https://www.instagram.com/antonijarrod/">@antonijarrod</a>
+        <img src="https://lorempixel.com/185/185/people/.">
+      </div>
 
+      <h1 id="userName"> Antoni Pérez</h1>
+      <a href="https://www.instagram.com/antonijarrod/">
+        <img src="assets/github_icon_small.svg">AntoniPrz
+      </a>
+
+      <p class="description"> Frontend Developer , Tecnico en electronica , especialista en microsoladura </p>
+
+      <div class="redes">
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="../assets/youtube.svg">
+
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/instagram.svg">
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="../assets/facebook.svg">
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://www.twitter.com/" target="_blank">
+              <img src="../assets/twitter.svg">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    const linksSocialMedia = {
+      github: 'antoniPrz',
+      youtube: 'watch?v=i9AHJkHqkpw&list=RDMMi9AHJkHqkpw&start_radio=1',
+      facebook: 'maykbrito',
+      instagram: 'jakeliny.gracielly',
+      twitter: 'jakelinytec',
+    }
+
+    function changeSocialmediaLinks() {
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute('class')
+        li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
+
+      }
+    }
+
+    changeSocialmediaLinks()
+
+  </script>
 </body>
 
 </html>
