@@ -30,6 +30,10 @@ function getGithubProfileInfos() {
     .then(data => {
       userName.textContent = data.name
       githubBio.textContent = data.bio
+      githubLoginName.textContent = data.login
+      document.getElementById("githubHtmlUrl").href = data.html_url
+      document.getElementById("githubAvatar").src = data.avatar_url
+      console.log(data)
 
     })
 
